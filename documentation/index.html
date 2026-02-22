@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Documentation - Infinite - Blog & Magazine Script</title>
-    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
-
-    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/main.css">
     <link rel="stylesheet" href="assets/prism/prism.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/custom.css">
+    <script src="assets/prism/prism.js"></script>
 </head>
 <body data-spy="scroll" data-target="#mainScrollspy">
 <div class="page-wrapper toggled light-theme">
@@ -20,7 +22,7 @@
                 <div class="col-12">
                     <div class="row">
                         <div class="col-12">
-                            <h1 class="doc-title"><strong>Infinite</strong> Documentation</h1>
+                            <a href="#getting_started" class="logo"><strong>Infinite</strong></a>
                             <a href="https://codecanyon.net/item/infinite-blog-magazine-script/19890709" target="_blank" class="visit-link">Visit on CodeCanyon</a>
                         </div>
                     </div>
@@ -30,6 +32,7 @@
             </header>
         </div>
     </div>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <div class="container-fluid">
         <div class="row">
@@ -39,6 +42,7 @@
                     <div class="sidebar-item sidebar-menu">
                         <div id="mainScrollspy">
                             <nav class="nav nav-pills flex-column">
+                                <strong class="nav-link">Documentation</strong>
                                 <a class="nav-link active" href="#getting_started">Getting Started</a>
                                 <a class="nav-link" href="#introduction">Introduction</a>
                                 <a class="nav-link" href="#files">Files</a>
@@ -63,12 +67,15 @@
                                 <a class="nav-link" href="#users">Users</a>
                                 <a class="nav-link" href="#roles_permissions">Roles & Permissions</a>
                                 <a class="nav-link" href="#cache">Cache System</a>
-                                <a class="nav-link" href="#seo">Seo Tools</a>
+                                <a class="nav-link" href="#seo">SEO Tools</a>
+                                <a class="nav-link" href="#storage">Storage</a>
                                 <a class="nav-link" href="#cron_job">Cron Job</a>
                                 <a class="nav-link" href="#social_login">Social Login Settings</a>
                                 <a class="nav-link" href="#email_settings">Email Settings</a>
                                 <a class="nav-link" href="#language_settings">Language Settings</a>
                                 <a class="nav-link" href="#font_settings">Font Settings</a>
+                                <a class="nav-link" href="#preferences">Preferences</a>
+                                <a class="nav-link" href="#ai_content_creator">AI Content Creator</a>
                                 <a class="nav-link" href="#settings">Settings</a>
                                 <a class="nav-link" href="#author">Author Panel</a>
                                 <a class="nav-link" href="#password_reset">Password Reset</a>
@@ -85,11 +92,11 @@
                     <div class="row row-main">
                         <div id="getting_started" class="item-content">
                             <div class="content-inner">
-                                <h1 class="main-title" style="margin-top: 60px;">Infinite - Blog & Magazine Script&nbsp;<span>v4.3</span></h1>
+                                <h1 class="main-title" style="margin-top: 60px;">Infinite - Blog & Magazine Script&nbsp;<span>v4.5</span></h1>
                                 <h2 class="sub-main-title">by Codingest</h2>
                                 <h3 class="title">Getting Started</h3>
                                 <p class="prepend-top append-0">Thank you for purchasing our script. If you have any questions that are beyond the scope of this help file, please feel free to contact us via
-                                    our <strong><a href="https://codingest.net/" target="_blank">help desk</a></strong>. This is an online help desk for Infinite. You can create your free
+                                    our <strong><a href="https://codingest.net/" target="_blank">helpdesk</a></strong>. This is an online helpdesk for Infinite. You can create your free
                                     account and use the system. Thanks so much!</p>
                             </div>
                         </div>
@@ -99,9 +106,9 @@
                         <div id="introduction" class="item-content">
                             <div class="content-inner">
                                 <h3>Introduction</h3>
-                                <p><strong>Infinite</strong> is a multi-purpose blog-magazine script. It has clean, responsive and user-friendly design. You can manage your posts, custom pages, categories,
-                                    user comments, advanced settings and contact messages with its powerful Admin panel. Also it has a useful ad management system. You can manage your ad spaces with this
-                                    system. It is secured, seo optimized, fast and easy to use.</p>
+                                <p>
+                                    <strong>Infinite</strong> is a multi-purpose blog and magazine script with a clean, responsive, and easy-to-use design. You can manage your posts, custom pages, categories, user comments, settings, and contact messages from the powerful admin panel. It also has a simple ad management system, so you can control your ad spaces easily. Infinite is secure, fast, SEO-friendly, and perfect for anyone who wants to run a blog or online magazine.
+                                </p>
                                 The technologies used:
                                 <ul>
                                     <li>
@@ -123,7 +130,7 @@
                                 <strong>Key Features:</strong>
                                 <ul>
                                     <li>Clean and Responsive Design</li>
-                                    <li>Built Using Bootstrap</li>
+                                    <li>Built Using Bootstrap 5</li>
                                     <li>Totally Secure System</li>
                                     <li>Multilingual System (New Languages Can be Added Easily)</li>
                                     <li>RTL Support</li>
@@ -132,13 +139,12 @@
                                     <li>Multi-Author System</li>
                                     <li>Light / Dark Mode</li>
                                     <li>Theme Options</li>
-                                    <li>Unlimited Layout Colors</li>
                                     <li>Cache System</li>
+                                    <li>AI Content Generator</li>
                                     <li>Editable & Sortable Navigation</li>
                                     <li>Responsive & Sortable Slider (Enable & Disable Option)</li>
-                                    <li>Responsive Ad Spaces for Any Kind of Ad Codes (Including Adsense)</li>
+                                    <li>Responsive Advertising Areas for All Types of Advertising Codes (Including AdSense)</li>
                                     <li>Adding Unlimited Fully Editable Pages</li>
-                                    <li>Page Descripton, Show Page, Show Page Title, Show Breadcrumb, Show Right Column Options for Pages</li>
                                     <li>Contact Page</li>
                                     <li>Search in Site</li>
                                     <li>Add, Delete, Update Unlimited Categories</li>
@@ -153,7 +159,6 @@
                                     <li>Downloadable Files for Posts</li>
                                     <li>Dynamic Tag System</li>
                                     <li>Ajax Comment System</li>
-                                    <li>Manage Comments</li>
                                     <li>Comment Approval System</li>
                                     <li>Pageview Counts (Enable & Disable Option)</li>
                                     <li>Rich Text Editor (Image and Video Can Be Added)</li>
@@ -161,7 +166,7 @@
                                     <li>Gallery Page (Enable & Disable Option)</li>
                                     <li>Gallery Albums</li>
                                     <li>Gallery Categories</li>
-                                    <li>Add, Delete Unlimited Photos</li>
+                                    <li>Add, Delete Unlimited Gallery Images</li>
                                     <li>Newsletter</li>
                                     <li>Different Email Libraries (Swift Mailer and PHP Mailer)</li>
                                     <li>Social Login (Facebook & Google)</li>
@@ -184,7 +189,6 @@
                                     <li>Change Logo, Favicon, Site Title, Site Description, etc. from Admin Panel</li>
                                     <li>Easy Installation Using Installation Wizard</li>
                                     <li>Detailed Documentation</li>
-                                    <li>Runs on PHP 7.4 and Higher Versions</li>
                                 </ul>
                                 <br/>
 
@@ -203,7 +207,7 @@
                                 <br/>
                                 There are some requirements for Infinite to work on your server. These requirements are:
                                 <ul>
-                                    <li>PHP 7.4 and Higher Versions</li>
+                                    <li>PHP >= 8.1</li>
                                     <li>cURL PHP Extension</li>
                                     <li>Fileinfo PHP Extension</li>
                                     <li>Exif PHP Extension</li>
@@ -220,65 +224,21 @@
                                 <strong>a) CSS Files</strong><br/>
                                 <ul>
                                     <li>
-                                        AdminLTE.min.css and _all-skins.min.css: Contains general css codes for admin panel.
+                                        assets/css/style.css: Contains main CSS codes for the front-side of the script.
                                     </li>
                                     <li>
-                                        bootstrap-toggle.min.css: Contains bootstrap toggle css codes.
-                                    </li>
-                                    <li>
-                                        custom.css: Contains css fixes for admin panel.
-                                    </li>
-                                    <li>
-                                        style.css: Contains main css codes.
-                                    </li>
-                                    <li>
-                                        responsive.css: Contains reponsive css fixes.
-                                    </li>
-
-                                    <li>
-                                        Style.css file is separated into sections using:<br/><br/>
-
-                                        /* ============ 1. General layout CSS styles ============ */<br/>
-
-                                        code<br/>
-
-                                        /* ============ 2. Header ============ */<br/>
-
-                                        code<br/>
-
-                                        /* ============ 3. Slider ============ */<br/>
-
-                                        code<br/>
-
-                                        etc, etc.<br/>
-
+                                        assets/admin/css/admin.css: Contains main CSS codes for the Admin panel.
                                     </li>
                                 </ul>
 
 
                                 <strong>b) JavaScript Files</strong><br/>
                                 <ul>
-                                    <li>jquery-1.12.4.min.js: Javascript library</li>
                                     <li>
-                                        app.min.js: This file contains general dashboard script codes.
+                                        assets/js/script.js: Contains general JavaScript codes for the front-side of the script.
                                     </li>
                                     <li>
-                                        bootstrap-toggle.min.js: Contains bootstrap toggle javascript codes.
-                                    </li>
-                                    <li>custom.js: Contains custom script codes. There are custom functions and ajax post functions</li>
-
-                                    <li>theme.js: Contains javascript functions for front-end.
-                                        <br/><br/>
-                                        Js files are separated into sections using:<br/>
-
-                                        //ajax post delete image<br/>
-                                        code<br/>
-
-                                        //Agreement datatable function<br/>
-
-                                        code<br/>
-
-                                        etc, etc.<br/>
+                                        assets/admin/js/admin.js: Contains general JavaScript codes for the Admin panel of the script.
                                     </li>
                                 </ul>
 
@@ -293,7 +253,10 @@
                                     <li>
                                         <strong>jQueryUI</strong><br/>
                                         jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library.
-
+                                    </li>
+                                    <li>
+                                        <strong>Bootstrap</strong><br/>
+                                        Bootstrap is a free and open source front-end library written using HTML, CSS, and JavaScript.
                                     </li>
                                     <li>
                                         <strong>TinyMCE</strong><br/>
@@ -305,28 +268,12 @@
                                         advanced interaction controls to any HTML table.
                                     </li>
                                     <li>
-                                        <strong>ICheck</strong><br/>
-                                        Highly customizable checkboxes and radio buttons.
-                                    </li>
-                                    <li>
                                         <strong>Pace</strong><br/>
                                         Automatic page load progress bar.
                                     </li>
                                     <li>
-                                        <strong>Tagsinput</strong><br/>
-                                        jQuery plugin providing a Twitter Bootstrap user interface for managing tags
-                                    </li>
-                                    <li>
-                                        <strong>Gallery</strong><br/>
-                                        Jquery Gallery plugin
-                                    </li>
-                                    <li>
-                                        <strong>Owl-Carousel</strong><br/>
-                                        Responsive jquery slider plugin
-                                    </li>
-                                    <li>
-                                        <strong>Jquery-confirm</strong><br/>
-                                        Jquery-confirm plugin
+                                        <strong>Tagify</strong><br/>
+                                        jQuery plugin for managing tags.
                                     </li>
                                 </ul>
                             </div>
@@ -338,22 +285,30 @@
                             <div class="content-inner">
                                 <h3 class="title">Installation</h3>
                                 <div class="alert alert-danger d-flex justify-content-start align-items-center" role="alert"><span class="fa fa-info mr-4"></span>
-                                    <p class="m-0">Please check your PHP version before start installation. Your PHP version should be <strong>7.4 or a higher version.</strong></p>
+                                    <p class="m-0">Check your PHP version before start installation. Your PHP version should be <strong>8.1 or a higher version.</strong></p>
                                 </div>
                                 <div class="alert alert-danger d-flex justify-content-start align-items-center" role="alert"><span class="fa fa-info mr-4"></span>
                                     <p class="m-0">cURL PHP extension should be enabled on your server. If you get <strong>"cURL is not available on your server! Please enable cURL to continue the installation"</strong>
                                         error during installation, you need to enable cURL on your server.
-                                        You can enable it by adding <strong>extension=php_curl.dll</strong> line to your php.ini file. If you cannot access your php.ini file, please contact your host service.</p>
+                                        You can enable it by adding <strong>extension=php_curl.dll</strong> line to your php.ini file. If you cannot access your php.ini file, please contact your hosting provider.</p>
                                 </div>
+
                                 <h5><strong>License Code</strong></h5>
                                 You need a license code to install the script. You can create this license code with your domain name and Envato purchase code.
                                 Go to our help desk ( <a href="https://codingest.net/" target="_blank">https://codingest.net/</a>) and create your account on this system. Then generate your license code from the Licenses section (<a href="https://codingest.net/licenses" target="_blank">https://codingest.net/licenses</a>).<br>
                                 If you want to change your domain name in the future, you can change it with the "Change Domain" option.
                                 <br><br><br>
-                                <h5><strong>You can install the script by watching this video.</strong></h5><br>
+                                <h5><strong>You can install the script by following this video.</strong><br>
+                                    <span style="font-size: 15px;">Due to updates, the files may differ, but the installation steps will remain the same.</span>
+                                </h5><br>
                                 <iframe width="800" height="542" src="https://www.youtube.com/embed/HO56846mW0A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 <br><br>
                                 <h5><strong>Or you can follow these steps to install the script:</strong></h5><br>
+
+                                <div class="alert alert-success d-flex justify-content-start align-items-center" role="alert"><span class="fa fa-info mr-4"></span>
+                                    Since cPanel is generally used, the installation steps are explained according to cPanel. However, if you are using Plesk Panel or another control panel,
+                                    the installation steps will be similar. In general, you will need to create a database, upload the script files to your server, and then run the installation wizard.
+                                </div>
 
                                 <strong>1. Create a new Database with user that has all permissions.</strong>
                                 <ul class="m-t-15">
@@ -361,7 +316,7 @@
                                         <img src="assets/images/db_1.jpg" alt="">
                                     </li>
                                     <br/><br/>
-                                    <li>Create New Database<br/><br/>
+                                    <li>Create a New Database with <strong>"utf8mb4_general_ci"</strong> collation.<br/><br/>
                                         <img src="assets/images/db_2.jpg" alt="">
                                     </li>
                                     <br/><br/>
@@ -385,11 +340,11 @@
                                         <img src="assets/images/update/1.jpg" alt=""><br/><br/>
                                     </li>
                                     <li>
-                                        Go to main directory of your site. Most of the time this folder will be <strong>public_html</strong>.<br><br>
+                                        Go to main directory of your site. Most of the time this folder will be <strong>"public_html"</strong>.<br><br>
                                         <img src="assets/images/ftp_1.png" alt=""><br/><br/>
                                     </li>
                                     <li>
-                                        Open this folder and upload <strong>codecanyon-infinite-blog-magazine-script.zip</strong> file to this directory.<br><br>
+                                        Open this folder and upload <strong>codecanyon-infinite-blog-magazine-script.zip</strong> file to this folder.<br><br>
                                         <img src="assets/images/update/5.jpg" alt=""><br/><br/>
                                     </li>
                                     <li>
@@ -406,8 +361,11 @@
                                         <div class="alert alert-danger d-flex justify-content-start align-items-center" role="alert"><span class="fa fa-info mr-4"></span>
                                             <p class="m-0">
                                                 Make sure that the .htaccess file exists in this directory. If you cannot see it, click <strong>Settings</strong> button at the top right corner and select <strong>Show Hidden Files (dotfiles)</strong> option.
-                                                Also, cPanel can automatically change the content of this file. Please open this file and make sure it is the same as the original file..
+                                                Also, cPanel can automatically change the content of this file. Please open this file and make sure the content of this file is like .htaccess below.
                                             </p>
+                                        </div>
+                                        <div class="alert alert-warning d-flex justify-content-start align-items-center" role="alert"><span class="fa fa-info mr-4"></span>
+                                            <p class="m-0">If you are using NGINX server, .htaccess will not work on your server. In this case, you need to make these settings on your server: <a href="https://codeigniter4.github.io/CodeIgniter4/installation/running.html#hosting-with-nginx" target="_blank">NGINX configuration for CodeIgniter</a></p>
                                         </div>
                                     </li>
                                 </ol>
@@ -416,18 +374,19 @@
                                 <img src="assets/images/ins1.jpg" alt="" style="border: 1px solid #eee;">
                                 <br/><br/><br/>
 
-                                <strong>4. Click the "Go to Support Desk" button and generate your license code in the "Licenses" section. If you do not have an account on our help desk, you need to create one. Enter your license code and then click Next.</strong><br><br>
-                                <img src="assets/images/ins2.jpg" alt=""><br/><br><br>
+                                <strong>4. Click the "Go to Help Desk" button and generate your license code if you don't have a license code. Enter your license code and then click Next.</strong><br><br>
+
+                                <img src="assets/images/ins2.jpg" alt=""><br/><br><br/>
 
                                 <strong>5. Check system requirements. If one of these extensions is not enabled, you must enable it from your server settings. If all requirements are provided, click Next.</strong><br/><br>
                                 <img src="assets/images/ins3.jpg" alt="">
-                                <br/><br><br>
+                                <br/><br><br/>
 
                                 <strong>6. Check folder permissions. If all folders are writable, click Next.</strong><br/><br>
-                                <img src="assets/images/ins4.jpg" alt=""><br/><br>
+                                <img src="assets/images/ins4.jpg" alt=""><br/><br><br/>
 
                                 <strong>7. Enter your database credentials. Click next.</strong><br/><br>
-                                <img src="assets/images/ins5.jpg" alt=""><br/><br>
+                                <img src="assets/images/ins5.jpg" alt=""><br/><br><br/>
                                 <div class="alert alert-warning d-flex justify-content-start align-items-center" role="alert"><span class="fa fa-info mr-4"></span>
                                     <p class="m-0">If you want to change your database credentials later, you can edit the <strong>app/Config/Database.php</strong> file.</p>
                                 </div>
@@ -438,9 +397,9 @@
                                 You need to enter "http" if you don't have SSL on your site. (Example: http://abc.com)
                                 <br/><br>
                                 <img src="assets/images/ins6.jpg" alt="">
-                                <br/><br>
+                                <br/><br><br/>
 
-                                <strong>8. Delete the install folder.</strong>
+                                <strong>9. Delete the install folder.</strong>
                                 <br/><br>
 
                                 <div class="alert alert-danger d-flex justify-content-start align-items-center" role="alert"><span class="fa fa-info mr-4"></span>
@@ -477,7 +436,7 @@
                                 <p><b>PURCHASE_CODE:</b> You need to enter your purchase code to this field.</p>
                                 <p><b>LICENSE_KEY:</b> You need to enter your license key to this field.</p>
                                 <p><b>cookie.prefix:</b> This value is used for cookies to avoid collisions.
-                                    Default value is "vr", but you can change this value and add a unique value for your site. You must not add a special character to this field.</p>
+                                    Default value is "inf", but you can change this value and add a unique value for your site. You must not add a special character to this field.</p>
                             </div>
                         </div>
 
@@ -524,32 +483,46 @@
                         <div id="quick_start" class="item-content">
                             <div class="content-inner">
                                 <h3 class="title">Quick Start</h3>
-                                <strong>&#x2713;&nbsp;&nbsp;Changing Admin Password:</strong> After login the system you will see your username in the top menu. Go over your username and a dropdown will open then click
-                                Settings / Change Password option. And fill in the form to change your password.<br><br>
 
-                                <strong>&#x2713;&nbsp;&nbsp;Adding Category: </strong> Go to "Categories" section from navigation and click Categories. Then fill in the Add Category form and click Add Category button.
-                                To add subcategory, Go to "Categories" section and click Subcategories. Then fill in the Add Subcategory form and click Add Subcategory button.
+                                <strong>&#x2713;&nbsp;&nbsp;Change Admin Password:</strong>
+                                After logging in, click on your username in the top menu and select <em>Settings → Change Password</em>. Fill out the form to update your password.
                                 <br><br>
-                                <strong>&#x2713;&nbsp;&nbsp;Adding Post: </strong> To add a post you should first add a category. After adding some categories go to "Posts" section from navigation and click Add Post.
-                                Then fill in the form and click Add Post button.
+
+                                <strong>&#x2713;&nbsp;&nbsp;Add a Category:</strong>
+                                Navigate to the <em>Categories</em> section and click on <em>Categories</em>. Fill in the form and click <em>Add Category</em>.
                                 <br><br>
-                                <strong>&#x2713;&nbsp;&nbsp;Adding Page: </strong> Go to "Pages" section from navigation and click Add Page. Then fill in the form and click Add Page button. If you want to manage
-                                existing pages: Go to "Pages" section from navigation and click Pages. Then you will see all pages in your site. You can make any change by selecting edit option for each page.
+
+                                <strong>&#x2713;&nbsp;&nbsp;Add a Post:</strong>
+                                Before adding a post, make sure you've created at least one category. Then go to <em>Posts → Add Post</em>, fill in the form, and click <em>Add Post</em>.
                                 <br><br>
-                                <strong>&#x2713;&nbsp;&nbsp;Adding Images to Gallery: </strong> To add images to gallery, first you should add some categories for images. Go to "Gallery" section from navigation and click Categories. Then fill in the Add Category form and click Add Category button.
-                                After addings some categories, go to "Gallery" section and click Images. Then fill in the Add Image form and click Add Image button.
+
+                                <strong>&#x2713;&nbsp;&nbsp;Add a Page:</strong>
+                                Go to <em>Pages → Add Page</em>, complete the form, and click <em>Add Page</em>.
+                                To manage existing pages, go to <em>Pages → Pages</em> where you can edit or update any page.
                                 <br><br>
-                                <strong>&#x2713;&nbsp;&nbsp;Sending Email to Registered Emails (Newsletter): </strong> To use newsletter feature you should first make your email settings.
-                                Go to "Settings" section from navigation and click Email Settings tab. Enter your mail server informations and click Save Changes button. Then go to "Newsletter" section from navigation and fill in the
-                                Send Email to Registered Emails form and click the Send Mail button.
+
+                                <strong>&#x2713;&nbsp;&nbsp;Add Images to Gallery:</strong>
+                                First, create image albums by going to <em>Gallery → Albums</em>. Fill in the form and click <em>Add Album</em>.
+                                Then go to <em>Gallery → Images</em> to upload images using the <em>Add Image</em> form.
                                 <br><br>
-                                <strong>&#x2713;&nbsp;&nbsp;Running Ads: </strong> If you want to add your ad codes to your website, this is very easy in the Infinite.
-                                Go to "Ad Spaces" section and add your ad codes then click Save Changes button.
+
+                                <strong>&#x2713;&nbsp;&nbsp;Send Newsletter Emails:</strong>
+                                Configure your email settings first via <em>Settings → Email Settings</em>. Enter your mail server details and click <em>Save Changes</em>.
+                                Then go to <em>Newsletter</em>, fill in the email form, and click <em>Send Mail</em>.
                                 <br><br>
-                                <strong>&#x2713;&nbsp;&nbsp;Managing Users: </strong> Go to "Users" section from navigation. You will see all users registered. You can select Change User Role, Delete User and Ban User options for each users.
+
+                                <strong>&#x2713;&nbsp;&nbsp;Add Advertisements:</strong>
+                                Go to <em>Ad Spaces</em>, paste your ad codes into the available fields, and click <em>Save Changes</em>.
                                 <br><br>
-                                <strong>&#x2713;&nbsp;&nbsp;Adding Author: </strong> Infinite is a multi-author system, so authors can add posts. To add an author to the system first user should register from register page.
-                                Then Admin should go to "Users" section from navigation and should set user role as Author. After this process user will became an Author and he can reach his own Panel to manage his posts.
+
+                                <strong>&#x2713;&nbsp;&nbsp;Manage Users:</strong>
+                                Go to the <em>Users</em> section to view all registered users. You can change roles, delete, or ban users from here.
+                                <br><br>
+
+                                <strong>&#x2713;&nbsp;&nbsp;Add an Author:</strong>
+                                Infinite supports multi-author functionality. A user must first register through the site.
+                                Then, an admin can go to <em>Users</em> and change their role to <em>Author</em>.
+                                Once done, the user will have access to their own author panel to manage posts.
                             </div>
                         </div>
 
@@ -576,7 +549,13 @@
                         <div id="themes" class="item-content">
                             <div class="content-inner">
                                 <h3 class="title">Themes</h3>
-                                You can select a layout option from this section.
+                                You can select a layout option from this section.<br><br>
+                                <p>
+                                    <strong>Dark Mode:</strong> If you enable the Dark Mode option, your site’s default mode will be "Dark." This means that when someone who hasn’t visited your site before opens it, they will see it in dark mode. They can then choose to switch to light mode if they prefer.
+                                </p>
+                                <p>
+                                    <strong>Theme Settings :</strong> You can change the color preferences of the theme you have selected with these options.
+                                </p>
                             </div>
                         </div>
 
@@ -585,11 +564,13 @@
                         <div id="navigation" class="item-content">
                             <div class="content-inner">
                                 <h3 class="title">Navigation</h3>
+                                <p>
+                                    You can manage your navigation from this section. You can easily sort your menu links with the drag and drop option. Also, you can change parent link of each item with drag and drop option.
+                                </p>
+
                                 <strong>Add Menu Link:</strong> You can add a new link to the navigation from this form. Also you can add a dropdown link to the navigation by selecting "Parent Link".<br><br>
-
-                                <strong>Navigation: </strong> You can see links on your navigation on this table and you can update or delete a link.<br><br>
-
-                                <strong>Menu Limit: </strong> You can set menu item count that will be appear on your navigation from this form.
+                                <strong>Menu Limit: </strong> You can set the number of items that will be displayed on the main navigation with this option. For example, if you set this to 9, you will see 9 links on your main navigation.
+                                If you have more than 9 links, these links will be displayed under a "More" menu.
                             </div>
                         </div>
 
@@ -718,37 +699,25 @@
                         <div id="categories" class="item-content">
                             <div class="content-inner">
                                 <h3 class="title">Categories</h3>
-                                You can add, update or delete categories from this section.<br/><br>
-                                <strong>Add Category: </strong> Go to "Categories" section from navigation and click Categories. Then fill in the Add Category form.
+                                <p>You can add, update or delete categories from this section.</p>
+                                <h4 class="subtitle">Add Category</h4>
+                                <p>Go to "Categories" section from navigation and click Categories. Then fill out the Add Category form.</p>
                                 <ul>
+                                    <li><b>Parent Category: </b> If you want to add a subcategory, you can select a parent category with this option.</li>
                                     <li><b>Category Name: </b> Category name.</li>
-                                    <li><b>Slug : </b> Slug for SEO friendly url. If your category name consists of special characters your slug will not be generated. In this case you should add custom slug.</li>
-                                    <li><b>Description: </b> You can add Description (Meta Tag) for category.</li>
-                                    <li><b>Keywords: </b> You can add Keywords (Meta Tag) for category.</li>
-                                    <li><b>Menu Order: </b> You can order categories with this value.</li>
-                                    <li><b>Show on Menu: </b> You can hide or show category on menu.</li>
-                                </ul>
-
-                                <strong>Update Category: </strong> Go to "Categories" section from navigation and click Categories. On the category list you can make changes
-                                on categories by selecting "Edit" option for each categories.<br><br>
-
-                                <strong>Delete Category: </strong> On the same list you can delete categories by selecting "Delete" option for each categories.
-                                <br><br>
-
-                                <strong>Subcategories: </strong> You can add, update or delete subcategories from this section.<br><br>
-                                <strong>Add Subcategory: </strong> Go to "Categories" section from navigation and click Subcategories. Then fill in the Add Subcategory form.
-                                <ul>
-                                    <li><b>Category Name: </b> Category name.</li>
-                                    <li><b>Category Slug : </b> Slug for SEO friendly url. If your category name consists of special characters your slug will not be generated. In this case you should add custom slug.</li>
+                                    <li><b>Category Slug : </b> Slug for SEO friendly url. If your category name consists of special characters your
+                                        slug will not be generated. In this case you should add custom slug.
+                                    </li>
                                     <li><b>Category Description: </b> You can add Description (Meta Tag) for category.</li>
                                     <li><b>Category Keywords: </b> You can add Keywords (Meta Tag) for category.</li>
-                                    <li><b>Parent Category: </b> You should select a top (parent) category.</li>
+                                    <li><b>Menu Order: </b> Your categories will be listed according to this order.</li>
+                                    <li><b>Show on Menu: </b> You can show or hide your categories on the menu.</li>
                                 </ul>
 
-                                <strong>Update Subcategory: </strong> Go to "Categories" section from navigation and click Subcategories. On the category list you can make changes
-                                on categories by selecting "Edit" option for each categories.<br><br>
-
-                                <strong>Delete Subcategory: </strong> On the same list you can delete categories by selecting "Delete" option for each categories.
+                                <h4 class="subtitle">Update Category</h4>
+                                <p>Go to "Categories" section from navigation and click Categories. On the category list you can make changes on categories by selecting "Edit" option for each categories.</p>
+                                <h4 class="subtitle">Delete Category</h4>
+                                <p>On the same list you can delete categories by selecting "Delete" option for each categories.</p>
                             </div>
                         </div>
 
@@ -790,10 +759,10 @@
                         <div id="comments" class="item-content">
                             <div class="content-inner">
                                 <h3 class="title">Comments</h3>
-                                Infinite has comment approval system. Only approved comments will be published in the site. If you want to disable this system and
-                                publish directly all the comments, you can disable this system from Settings section in the Admin panel.<br><br>
-                                <strong>Pending Comments: </strong> You can see and approve the pending comments from this section.<br><br>
-                                <strong>Approved Comments: </strong> You can see and delete the approved comments from this section.<br><br>
+                                <p>All comments are listed and moderated on the "Comments" page.</p>
+                                <p>Infinite has comment approval system. Only approved comments will be published in the site. If you want to disable this system and
+                                    publish directly all the comments, you can disable this system from Settings section in the Admin panel.</p>
+                                <p>If the comment approval system is active, newly added comments will wait for approval on this page. You can click the "approve" button to approve comments.</p>
                             </div>
                         </div>
 
@@ -858,14 +827,17 @@
                         <div id="users" class="item-content">
                             <div class="content-inner">
                                 <h3 class="title">Users</h3>
-                                You can manage registered user from this section.<br/><br>
-
-                                <strong>Options: </strong>
+                                <p>You can manage registered users from this section. Go to "Users" section from navigation.</p>
+                                <h4 class="subtitle">Options</h4>
                                 <ul>
-                                    <li><b>Change User Role: </b> If you want to change user role you can use "Change User Role" option.</li>
-                                    <li><b>Ban User: </b> You can ban a user or remove ban for a user.</li>
-                                    <li><b>Delete: </b> You can delete a user by selecting delete option.</li>
+                                    <li><strong>Change User Role:</strong> If you want to change user role you can use "Change User Role" option.</li>
+                                    <li><strong>Ban User:</strong> If you want to ban a user you can use "Ban User" option.</li>
+                                    <li><strong>Edit:</strong> You can edit a user by selecting edit option.</li>
+                                    <li><strong>Delete:</strong> You can delete a user by selecting delete option.</li>
                                 </ul>
+
+                                <h4 class="subtitle">Add User</h4>
+                                <p>You can add a new user from this section.</p>
                             </div>
                         </div>
 
@@ -892,10 +864,26 @@
                         <div id="cache" class="item-content">
                             <div class="content-inner">
                                 <h3 class="title">Cache System</h3>
-                                You can enable or disable cache system from this section.
+                                Cache system is a mechanism used to temporarily store frequently accessed data in memory (files) to reduce database query load, improve performance, and enhance application responsiveness.
+                                Instead of repeatedly querying the database for the same data, the cache stores the results of previous queries and serves them directly when needed.<br><br>
+                                Infinite has 3 cache mechanisms:
                                 <ul>
-                                    <li><b>Refresh Cache Files When Database Changes: </b> If you select yes, the cache files will be refreshed, if there is a change in the database.</li>
-                                    <li><b>Cache Refresh Time (Minute) : </b> Cache files will automatically refresh after this time.</li>
+                                    <li><b>Main Cache System: </b>This cache system is only for the posts on your site. If you enable this system, the posts will remain the same until the cache is reset, so your site will not have to run the same database queries every time.<br>
+                                        Options:<br>
+                                        <ul>
+                                            <li><b>Refresh Cache Files When Database Changes: </b> If you select yes, the cache files will be refreshed, if there is a change in the database.</li>
+                                            <li><b>Cache Refresh Time (Minute) : </b> Cache files will automatically refresh after this time.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Static Cache System: </strong>This cache is for records that do not change much on the site (such as settings, categories, pages etc.). It is recommended that this option is always active.
+                                        This way, your site will not run unnecessary database queries for data that does not change frequently. If there is a change in your database records, the cache will be automatically refreshed.
+                                    </li>
+                                    <li>
+                                        <strong>Stable Cache System: </strong>This cache is constantly active and is used for sections such as Popular posts, Popular tags. Since database queries run for such sections take a little more time than normal queries,
+                                        instead of checking this data on every page load, it is updated at certain intervals and thus your site will always be fast even if there are many posts on your site.
+                                        The cache refresh period for these sections can be changed in the "app/Config/Constants.php" file if desired.
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -930,6 +918,66 @@
                                     </p>
                                 </div>
 
+                            </div>
+                        </div>
+
+                        <div class="seperator"></div>
+
+                        <div id="storage" class="item-content">
+                            <div class="content-inner">
+                                <h3 class="title">Storage</h3>
+                                You can select your storage option from this section. If you select the "Local Storage" option, uploaded files will be stored in your server.
+                                If you select the "AWS S3 Storage" option, uploaded files will be stored in your AWS S3 account.
+                                To use AWS S3, you need to follow these steps:<br/>
+                                <br>
+                                <strong>AWS S3 Integration:</strong><br>
+                                <ol>
+                                    <li>Go to <a href="https://aws.amazon.com/s3/" target="_blank" rel="noopener">https://aws.amazon.com/s3/</a> URL and create your account.<br/><br/></li>
+                                    <li>Click the "AWS Management Console" link.<br/><br/>
+                                        <p><img src="assets/images/aws1.jpg" alt=""/><br/><br/></p>
+                                    </li>
+                                    <li>Click the "Services" link from the top menu and then click the "S3" link under the "Storage" section.<br/>
+                                        <br/>
+                                        <p><img src="assets/images/aws2.jpg" alt=""/></p>
+                                        <br/><br/></li>
+                                    <li>Click the "Create bucket" button. <br/><br/>
+                                        <p><img src="assets/images/aws3.jpg" alt=""/></p>
+                                        <br/><br/></li>
+                                    <li>Enter your "bucket name" and select your region. "<strong>us-east-1</strong>" will be your region code and you need to enter this value from the Admin panel. Your region code can be different according to your location.<br/><br/>
+                                        <p><img src="assets/images/aws4.jpg" alt=""/></p>
+                                        <p><br/>Select the "<strong>ACLs enabled</strong>" option.<br/><br/></p>
+                                        <p><img src="assets/images/aws5.jpg" alt=""/></p>
+                                        <p><br/><br/>Unselect the "<strong>Block all public</strong>" option and select "I acknowledge that the..." option.<br/><br/></p>
+                                        <p><img src="assets/images/aws6.jpg" alt=""/></p>
+                                        <p><br/>Select these options and Click the "<strong>Create bucket</strong>" button.<br/><br/></p>
+                                        <p><img src="assets/images/aws7.jpg" alt=""/></p>
+                                        <p><br/><br/></p>
+                                    </li>
+                                    <li>Click the <strong>Security Credentials</strong> option.<br/><br/>
+                                        <p><img src="assets/images/aws8.jpg" alt=""/></p>
+                                        <br/><br/>
+                                    </li>
+                                    <li>Go to the <strong>Access keys</strong> section and click the <strong>Create Access Key</strong> button. and create your access keys.<br/><br/>
+                                        <p><img src="assets/images/aws9.jpg" alt=""/></p>
+                                        <br/><br/>
+                                    </li>
+                                    <li>Select the option and click the <strong>Create Access Key</strong> button.<br/><br/>
+                                        <p><img src="assets/images/aws10.jpg" alt=""/></p>
+                                        <br/><br/>
+                                    </li>
+                                    <li>Copy your keys and add them from the "<strong>Storage / AWS S3 Storage</strong>" section in the Admin panel.
+                                        <br/><br/>
+                                        <p><img src="assets/images/aws11.jpg" alt=""/></p>
+                                        <br/><br/>
+                                    </li>
+                                </ol>
+
+                                <strong>Adding Created API Keys from the Admin Panel:</strong><br/><br/>
+                                After creating your <strong>bucket</strong> and your <strong>API keys</strong> (access key and secret key), you need to go to the <strong>Storage</strong> section in your Admin panel and add the credentials from the <strong>AWS S3 Storage </strong>form<strong>.<br/></strong><br/>
+                                <strong>AWS Access Key</strong>: Enter the access key that you created.<br/>
+                                <strong>AWS Secret Key</strong>: Enter the secret key that you created.<br/>
+                                <strong>Bucket Name: </strong>Enter your bucket name. (Example: my-bucket)<br/>
+                                <strong>Region Code: </strong>Enter your region code. (Example: us-east-1)<br/>
                             </div>
                         </div>
 
@@ -981,25 +1029,31 @@
                                         If your site does not redirect automatically, read the "SSL and .htaccess" section.
                                     </p>
                                 </div>
+
                                 <div class="item-sub-content">
                                     <h4 class="title">Facebook Login</h4>
                                     <ol>
-                                        <li>Go to <a href="https://developers.facebook.com/" target="_blank">https://developers.facebook.com/</a> URL.</li>
-                                        <li>Click <strong>"My Apps"</strong> option.<br><br><img src="assets/images/fb1.jpg" alt=""><br><br><br></li>
-                                        <li>Click <strong>"Create App"</strong> option.<br><br><img src="assets/images/fb2.jpg" alt=""><br><br><br></li>
-                                        <li>Select <strong>"Consumer"</strong> option.<br><br><img src="assets/images/fb3.jpg" alt=""><br><br><br></li>
-                                        <li>Fill the form and click <strong>"Create App"</strong> button.<br><br><img src="assets/images/fb4.jpg" alt=""><br><br></li>
-                                        <li>Select <strong>"Facebook Login"</strong> option. <br><br><img src="assets/images/fb5.jpg" alt=""><br><br><br></li>
-                                        <li>Select <strong>"Web"</strong> option. <br><br><img src="assets/images/fb6.jpg" alt=""><br><br><br></li>
-                                        <li>Enter your site URL and click "Save" button. It should be a HTTPS URL. E.g: https://domain.com <br><br><img src="assets/images/fb7.jpg" alt=""><br><br></li>
-                                        <li>Click <strong>"Facebook Login > Settings"</strong> link from sidebar menu.<br>Enter redirect URL: <strong>"https://your domain.com/facebook-callback"</strong> and click <strong>"Save Changes"</strong> button. <br><img src="assets/images/fb8.jpg" alt=""><br><br></li>
-                                        <li>Click "App Review > Permissions and Features" link from the sidebar menu. Give "Advanced Access" for the "public_profile" and "email" permissions.<br><br><img src="assets/images/fbperm.png" alt=""><br><br></li>
-                                        <li>Click <strong>"Settings > Basic"</strong> link from sidebar menu.<br> Enter your domain to <strong>"App Domains"</strong> and <strong>"Privacy Policy
-                                            URL"</strong> fields. <br>
-                                            Enter your Terms & Conditions page link to the <b>"User Data Deletion"</b> field.
-                                            <br>Select a category for your application and click <strong>"Save Changes"</strong> button.<br><br><img src="assets/images/fb9.jpg" alt=""><br><br></li>
-                                        <li>Change your APP Status to <strong>"Live"</strong>.<br>Copy <strong>"App ID"</strong> and <strong>"App Secret"</strong> values from this page and enter these
-                                            values from <strong>"Social Login"</strong> section in the Admin panel.<br><br><img src="assets/images/fb10.jpg" alt=""></li>
+                                        <li>Go to <a href="https://developers.facebook.com/apps/" target="_blank">https://developers.facebook.com/apps/</a> URL.</li>
+                                        <li>Click <strong>"Create App"</strong> option.</li>
+                                        <li>Enter "App name" and "App contact email". Click Next button.<br><br><img src="assets/images/fb01.jpg" alt=""><br><br></li>
+                                        <li>Select <b>"Authenticate and request data from users with Facebook Login"</b>. Click Next button.<br><br><img src="assets/images/fb02.jpg" alt=""><br><br></li>
+                                        <li>Select <b>"I don’t want to connect a business portfolio yet."</b>. Click Next button.<br><br><img src="assets/images/fb03.jpg" alt=""><br><br></li>
+                                        <li>Click <b>"Go to dashboard"</b>. Click Next button.<br><br><img src="assets/images/fb04.jpg" alt=""><br><br></li>
+                                        <li>In the dashboard, click on the <b>"Customize adding a Facebook Login button"</b> option.<br><br><img src="assets/images/fb05.jpg" alt=""><br><br></li>
+                                        <li>Click <b>"Add"</b> button for email permission.<br><br><img src="assets/images/fb06.jpg" alt=""><br><br></li>
+                                        <li>Click the <b>"Settings"</b> option. Enter "Valid OAuth Redirect URIs" : <b>"https://your domain.com/facebook-callback"</b> and click <b>"Save Changes"</b> button.<br><br><img src="assets/images/fb07.jpg" alt=""><br><br></li>
+                                        <li>Go to Dashboard and Click the <b>"App Settings > Basic"</b> link from sidebar.<br>
+                                            Enter your domain to <b>"App Domains"</b> field.<br>
+                                            Enter your Terms & Conditions page link to the <b>"User Data Deletion"</b> and <b>"Privacy Policy URL"</b> fields.<br>
+                                            Select a category and a app icon for your application and click <b>"Save Changes"</b> button.<br><br>
+                                            <p class="text-danger">
+                                                **Copy <b>"App ID"</b> and <b>"App Secret"</b> values from this page and enter these values from "Social Login Settings" section in the Admin panel.
+                                            </p>
+                                            <img src="assets/images/fb08.jpg" alt=""><br><br>
+                                        </li>
+                                        <li>Click <b>"Publish"</b> from sidebar and click <b>"Publish"</b> button.<br><br><img src="assets/images/fb09.jpg" alt=""><br><br></li>
+                                        <p class="text-danger"><strong>If you see an error about "Business verification", you can verify your business or contact Facebook support.</strong></p>
+
                                     </ol>
                                 </div>
 
@@ -1159,7 +1213,7 @@
                         <div id="font_settings" class="item-content">
                             <div class="content-inner">
                                 <h3 class="title">Font Settings</h3>
-                                You can change your site fonts from this section.<br><br>
+                                You can change your site fonts from this section.
                                 <h4 class="subtitle">Add Font</h4>
                                 <p>If you want to add new fonts to your site, you can add them from this section. Follow these steps to add a new font:</p>
                                 <ol>
@@ -1175,6 +1229,101 @@
                                         E.g: font-family: 'Open Sans', sans-serif;
                                     </li>
                                 </ol>
+                                <p>
+                                    <strong>Local Fonts</strong><br>
+                                    For GDPR compliance, if you do not want to use Google Fonts, you can use local fonts in the script. These fonts are included in the script files and are not loaded from Google. <br>
+                                    Available local fonts: <b>Arial, Helvetica, Inter, Open Sans, PT Serif, Roboto, Verdana and Source Sans 3.</b>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="seperator"></div>
+
+                        <div id="preferences" class="item-content">
+                            <div class="content-inner">
+                                <h3 class="title">Preferences</h3>
+                                <ul>
+                                    <li><b>Multilingual System: </b> Your can enable or disable multilingual system in your site.</li>
+                                    <li><b>Registration System: </b> Your can enable or disable registration system in your site.</li>
+                                    <li><b>Sticky Sidebar: </b> Your can enable or disable sticky sidebar in your site.</li>
+                                    <li><b>Approve Posts Before Publishing: </b> You can enable this option if you want to approve the authors' posts before they are published.</li>
+                                    <li><b>Comment System: </b> Your can enable or disable comment system in your site.</li>
+                                    <li><b>Comment Approval System: </b> You can enable this option if you want to approve the comments before they are published.</li>
+                                    <li><b>Slider: </b> Your can enable or disable slider in your site.</li>
+                                    <li><b>Emoji Reactions: </b> Your can enable or disable emoji reactions in your site.</li>
+                                    <li><b>Show Post View Count: </b> Your can show or hide post page view count.</li>
+                                    <li><b>RSS: </b> Your can enable or disable RSS in your site.</li>
+                                    <li><b>RSS Content: </b> By default, the contents of the posts will not be added to the RSS feeds created on your site. Only the descriptions of the posts will be added. If you want to add the content of the posts to the RSS feeds, you can select the "Distribute Post Content" option.</li>
+                                    <li><b>Show Categories on Sidebar : </b> You can show or hide sidebar categories with this option.</li>
+                                    <li><b>File Manager: </b> Your can hide or show all uploaded files for users. If you select "Show Only Users Own Files" option, users will see their own uploaded files.</li>
+                                </ul>
+                                <br>
+                                <h4 class="subtitle">File Upload</h4>
+                                <ul>
+                                    <li><b>Image File Format:</b> Uploaded images will be converted to the selected image format. You can choose the format you want with this option.</li>
+                                    <li><b>Allowed File Extensions:</b> Hackers often hack websites by uploading some files. To prevent such security issues, the system allows only allowed file types to be uploaded.
+                                        You can add the extensions of the file types you want to be uploaded to your site from this field.
+                                        <p><span class="text-danger"> We do not recommend you to add files extensions that can create security problems. Example, <strong>PHP, PY, ASP, JSP, SH, JS etc.</strong></span></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="seperator"></div>
+
+                        <div id="ai_content_creator" class="item-content">
+                            <div class="content-inner">
+                                <h3 class="title">AI Content Creator</h3>
+                                <p>
+                                    The AI Content Creator is a powerful tool designed to generate high-quality written content using OpenAI's advanced language models.
+                                    By adjusting various parameters, you can control the tone, style, length, and diversity of the generated text. You can simply provide a topic, customize the settings,
+                                    and let the AI generate engaging and relevant content in seconds.
+                                </p>
+                                <ul>
+                                    <li>
+                                        <strong>Model: </strong>These options let you select the AI model to use for text generation. OpenAI provides various models optimized for different tasks, such as GPT-3.5 and GPT-4. Choose the model that best suits your content needs.
+                                        GPT-4o mini and GPT-3.5 Turbo are the cheapest models. If you want to use this API at low cost, you can use these options.
+                                    </li>
+                                    <li>
+                                        <strong>Temperature (Response Diversity): </strong>This numerical input controls the randomness of the AI's responses. A value of 0 makes the output more deterministic and focused, while a higher value (closer to 1) increases creativity and randomness. <br>
+                                        Suggested values:<br>
+                                        - Low (0-0.3): More precise and structured responses<br>
+                                        - Medium (0.4-0.7): Balanced creativity and coherence<br>
+                                        - High (0.8-1): Highly creative and varied responses<br>
+                                    </li>
+                                    <li>
+                                        <strong>Tone Style: </strong>These options allow you to select the tone of the generated content, which determines the style and emotional impact of the text. Choosing the right tone ensures that the output aligns with your intended audience and purpose.
+                                    </li>
+                                    <li>
+                                        <strong>Length of Text: </strong>This option determines the approximate length of the generated content:<br>
+                                        - Very Short: A few sentences<br>
+                                        - Short: A short paragraph<br>
+                                        - Medium: A few paragraphs<br>
+                                        - Long: Multiple paragraphs<br>
+                                        - Very Long: Comprehensive, extended content
+                                    </li>
+                                    <li>
+                                        <strong>Topic: </strong>This text area allows you to specify the subject or topic for content generation. Provide clear and specific input to get the most relevant and high-quality AI-generated text.
+                                    </li>
+                                </ul>
+                                <p>
+                                    <strong>Activating the AI Content Creator</strong><br>
+                                    You can activate this system from the "AI Content Creator" section in the "Preferences" section in the Admin panel. You need an OpenAI API key to activate the system.<br><br>
+                                </p>
+                                <p>
+                                    <strong>Obtaining an OpenAI API Key</strong><br>
+                                <ol>
+                                    <li>Sign up or log in to <a href="https://platform.openai.com/" target="_blank">https://platform.openai.com/</a></li>
+                                    <li>Navigate to the <b>API Keys</b> section in your account Dashboard.</li>
+                                    <li>Click on <b>Create a new secret key</b>.</li>
+                                    <li>Copy and enter this API key to the "API Key" field in the "AI Content Creator" in your Admin panel.</li>
+                                </ol>
+                                </p>
+                                <div class="alert alert-info d-flex justify-content-start align-items-center" role="alert"><span class="fa fa-info mr-4"></span>
+                                    <p class="m-0">
+                                        To set which users can use AI Content Creator, you can grant the "AI Writer" permission to any role you want from the Roles & Permissions section. Only users with this permission can use this system.
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
@@ -1188,16 +1337,6 @@
                                     <li><b>Timezone: </b> Your timezone. You can see all available timezones from here: <a href="https://www.php.net/manual/en/timezones.php" target="_blank">https://www.php.net/manual/en/timezones.php</a></li>
                                     <li><b>Application Name: </b> Your site name.</li>
                                     <li><b>Admin Panel Link: </b> You can change Admin panel link from this field.</li>
-                                    <li><b>Multilingual System: </b> Your can enable or disable multilingual system in your site.</li>
-                                    <li><b>Registration System: </b> Your can enable or disable registration system in your site.</li>
-                                    <li><b>Approve Posts Before Publishing: </b> You can enable this option if you want to approve the authors' posts before they are published.</li>
-                                    <li><b>Comment System: </b> Your can enable or disable comment system in your site.</li>
-                                    <li><b>Comment Approval System: </b> You can enable this option if you want to approve the comments before they are published.</li>
-                                    <li><b>Slider: </b> Your can enable or disable slider in your site.</li>
-                                    <li><b>Emoji Reactions: </b> Your can enable or disable emoji reactions in your site.</li>
-                                    <li><b>Show Post View Count: </b> Your can show or hide post page view count.</li>
-                                    <li><b>RSS: </b> Your can enable or disable RSS in your site.</li>
-                                    <li><b>File Manager: </b> Your can hide or show all uploaded files for users. If you select "Show Only Users Own Files" option, users will see their own uploaded files.</li>
                                     <li><b>Number of Posts Per Page (Pagination): </b> Your can set post count in each page from this field.</li>
                                     <li><b>Post Optional Url Button Name: </b> You can set a new name for your optional button.</li>
                                     <li><b>Footer About Section: </b> About your site. This will be shown in the footer.</li>
@@ -1219,8 +1358,8 @@
                                     Other visitors will see a "Coming Soon!" text.</p>
                                 <br/><br/>
 
-                                <strong>Visual Settings:</strong><br/>
-                                You can change your site color, logo and favicon from this section.
+                                <strong>Logo:</strong><br/>
+                                You can change your site logo and favicon from this section.
                                 <br/><br/><br/>
                                 <strong>Contact Settings:</strong><br/>
                                 Go to "Settings" section from navigation and click "Contact Settings" tab.
@@ -1234,9 +1373,9 @@
                                 <strong>Social Media Settings:</strong><br> Go to "Settings" section from navigation and click "Social Media Settings" tab.<br/>
                                 You can add your social media accounts from this section.<br><br><br/>
 
-                                <strong>Facebook Comments:</strong><br/>
-                                If you want to use Facebook comment plugin you need to add your plugin code to this section.<br><br>
-                                How to Get This Code:<br>
+                                <h4 class="subtitle">Facebook Comments</h4>
+                                <p>If you want to use Facebook comment plugin you have to add your plugin code to this section.</p>
+                                <strong>How to Get This Code:</strong><br>
                                 <ol>
                                     <li>Go to <a href="https://developers.facebook.com" target="_blank">https://developers.facebook.com</a> and
                                         click Add a new app.
@@ -1244,27 +1383,27 @@
                                     <li>Click Settings and then click +Add platform.</li>
                                     <li>Select website and enter your site url and click save changes.</li>
                                     <li>Then go to <a href="https://developers.facebook.com/docs/plugins/comments/" target="_blank">https://developers.facebook.com/docs/plugins/comments/</a>
-                                        and click Get Code button.
+                                        URL. Enter your site URL to "URL to comment on" field. Enter 750 to "Width" field and click Get Code button.
                                     </li>
-                                    <li>Then copy the code in the <strong>"STEP 2"</strong> and paste to Facebook Comments field.
-                                        <img src="assets/images/facebook_comment.png" alt="" width="750"><br/><br/>
+                                    <li>Then copy the code in the <strong>"Step 2"</strong> and paste to Facebook Comments field.
+                                        <img src="assets/images/facebook_comment.jpg" alt="" width="750"><br/><br/>
                                     </li>
                                 </ol>
                                 <br><br>
-                                <strong>Custom CSS Codes</strong>
-                                <p>You can add custom CSS codes from this section. These codes will be added in the &lt;head> tags of your site.</p>
+                                <h4 class="subtitle">Custom Header Codes</h4>
+                                <p>You can add your custom codes (E.g. CSS) to this field. These codes will be added in the &lt;head> tags of your site.</p>
                                 <p>You need to add your CSS codes between &lt;style>&lt;/style&gt; tags. <br>Example:</p>
-                                <pre><code class="language-apacheconf">&lt;style><br>
-body {<br>
-    background-color: #00a65a;<br>
-}<br>
+                                <pre><code class="language-apacheconf">&lt;style>
+body {
+    background-color: #00a65a;
+}
 &lt;/style&gt;
 </code></pre>
-                                <br><br>
-                                <strong>Custom JavaScript Codes</strong>
-                                <p>You can add custom JavaScript codes from this section. These codes will be added to footer of your site.</p>
+
+                                <h4 class="subtitle">Custom Footer Codes</h4>
+                                <p>You can add your custom codes (E.g. JavaScript) to this field. These codes will be added to footer of your site.</p>
                                 <p>You need to add your JavaScript codes between &lt;script>&lt;/script&gt; tags. <br>Example:</p>
-                                <pre><code class="language-apacheconf">&lt;script><br>
+                                <pre><code class="language-apacheconf">&lt;script>
 alert('Hello!');
 &lt;/script&gt;
 </code></pre>
@@ -1302,17 +1441,18 @@ alert('Hello!');
                                 <h3 class="title">Update Guide</h3>
                                 You can find all instructions to update your site from this section. If you don't know your current version, you can check it from the version.txt file in the main directory of your site.<br><br>
                                 <h6><strong>Example Update Video:</strong></h6>
+                                <p>Due to updates, the files may differ, but the update steps will remain the same.</p>
                                 <iframe width="800" height="542" src="https://www.youtube.com/embed/so0sWwOSv4o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 <br>
 
                                 <div class="item-sub-content">
-                                    <h4 class="title">Update from v4.2.x to v4.3</h4>
+                                    <h4 class="title">Update from v4.4 to v4.5</h4>
                                     <ol>
                                         <li>
                                             You need to update all files. Follow all steps in the <a href="#update_ftp_files"><strong>Updating FTP Files (Click Here)</strong></a> section.
                                         </li>
                                         <li>
-                                            You need to update your datatase. Follow all steps in the <a href="#update_database"><strong>Updating Database (Click Here)</strong></a> section. You can find <strong>update_database.php</strong> file in the <strong>"documentation/updates/Update from v4.2.x to v4.3"</strong> folder.
+                                            You need to update your datatase. Follow all steps in the <a href="#update_database"><strong>Updating Database (Click Here)</strong></a> section. You can find <strong>update_database.php</strong> file in the <strong>"documentation/updates/Update from v4.4 to v4.5"</strong> folder.
                                         </li>
                                         <li>
                                             Clear your browser cache. This is important. If you do not clear, your browser may continue to run old codes.
@@ -1321,13 +1461,13 @@ alert('Hello!');
                                 </div>
 
                                 <div class="item-sub-content">
-                                    <h4 class="title">Update from v4.1.x to v4.3</h4>
+                                    <h4 class="title">Update from v4.3 to v4.5</h4>
                                     <ol>
                                         <li>
                                             You need to update all files. Follow all steps in the <a href="#update_ftp_files"><strong>Updating FTP Files (Click Here)</strong></a> section.
                                         </li>
                                         <li>
-                                            You need to update your datatase. Follow all steps in the <a href="#update_database"><strong>Updating Database (Click Here)</strong></a> section. You can find <strong>update_database.php</strong> file in the <strong>"documentation/updates/Update from v4.1.x to v4.3"</strong> folder.
+                                            You need to update your datatase. Follow all steps in the <a href="#update_database"><strong>Updating Database (Click Here)</strong></a> section. You can find <strong>update_database.php</strong> file in the <strong>"documentation/updates/Update from v4.3 to v4.5"</strong> folder.
                                         </li>
                                         <li>
                                             Clear your browser cache. This is important. If you do not clear, your browser may continue to run old codes.
@@ -1336,13 +1476,13 @@ alert('Hello!');
                                 </div>
 
                                 <div class="item-sub-content">
-                                    <h4 class="title">Update from v4.0.x to v4.3</h4>
+                                    <h4 class="title">Update from v4.2.x to v4.5</h4>
                                     <ol>
                                         <li>
                                             You need to update all files. Follow all steps in the <a href="#update_ftp_files"><strong>Updating FTP Files (Click Here)</strong></a> section.
                                         </li>
                                         <li>
-                                            You need to update your datatase. Follow all steps in the <a href="#update_database"><strong>Updating Database (Click Here)</strong></a> section. You can find <strong>update_database.php</strong> file in the <strong>"documentation/updates/Update from v4.0.x to v4.3"</strong> folder.
+                                            You need to update your datatase. Follow all steps in the <a href="#update_database"><strong>Updating Database (Click Here)</strong></a> section. You can find <strong>update_database.php</strong> file in the <strong>"documentation/updates/Update from v4.2.x to v4.5"</strong> folder.
                                         </li>
                                         <li>
                                             Clear your browser cache. This is important. If you do not clear, your browser may continue to run old codes.
@@ -1351,13 +1491,13 @@ alert('Hello!');
                                 </div>
 
                                 <div class="item-sub-content">
-                                    <h4 class="title">Update from v3.9 to v4.3</h4>
+                                    <h4 class="title">Update from v4.1.x to v4.5</h4>
                                     <ol>
                                         <li>
                                             You need to update all files. Follow all steps in the <a href="#update_ftp_files"><strong>Updating FTP Files (Click Here)</strong></a> section.
                                         </li>
                                         <li>
-                                            You need to update your datatase. Follow all steps in the <a href="#update_database"><strong>Updating Database (Click Here)</strong></a> section. You can find <strong>update_database.php</strong> file in the <strong>"documentation/updates/Update from v3.9 to v4.3"</strong> folder.
+                                            You need to update your datatase. Follow all steps in the <a href="#update_database"><strong>Updating Database (Click Here)</strong></a> section. You can find <strong>update_database.php</strong> file in the <strong>"documentation/updates/Update from v4.1.x to v4.5"</strong> folder.
                                         </li>
                                         <li>
                                             Clear your browser cache. This is important. If you do not clear, your browser may continue to run old codes.
@@ -1433,7 +1573,7 @@ alert('Hello!');
                                     <h4 class="title">Updating Database</h4>
                                     <ol>
                                         <li>
-                                            Upload <strong>update_database.php</strong> file to your main directory. You can find this file in the "documentation/updates" folder.<br><br>
+                                            Upload <strong>update_database.php</strong> file to your main directory. You can find this file in the <b>"documentation/updates"</b> folder.<br><br>
                                             <img src="assets/images/update/13.jpg" alt=""><br/><br/>
                                         </li>
                                         <li>
@@ -1441,11 +1581,11 @@ alert('Hello!');
                                             <img src="assets/images/update/14.jpg" alt=""><br/><br/>
                                         </li>
                                         <li>
-                                            When you go to this URL, you will see an update wizard. Click the <strong>Update My Database</strong> button and update your database.<br><br>
+                                            When you go to this URL, you will see an update wizard. Enter your database credentials and click the <b>Update My Database</b> button.<br><br>
                                             <img src="assets/images/update/15.jpg" alt=""><br/><br/>
                                         </li>
                                         <li>
-                                            Delete "update_database.php" file.<br><br>
+                                            After you see the success message, close this page and delete <b>"update_database.php"</b> file.<br><br>
                                         </li>
                                     </ol>
                                 </div>
@@ -1463,27 +1603,16 @@ alert('Hello!');
 </div>
 <!-- page-wrapper -->
 
-
-<script src="assets/js/jquery-3.3.1.min.js"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="assets/bootstrap/js/popper.min.js"></script>
-<script src="assets/prism/prism.js"></script>
 <script>
-    $(document).ready(function () {
-        $('body').scrollspy({target: "#mainScrollspy", offset: 50});
-        $("#mainScrollspy a").on('click', function (event) {
-            if (this.hash !== "") {
-                event.preventDefault();
-                var hash = this.hash;
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function () {
-                    window.location.hash = hash;
-                });
-            }
+    document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll(".nav .nav-link");
+        navLinks.forEach(link => {
+            link.addEventListener("click", function () {
+                navLinks.forEach(l => l.classList.remove("active"));
+                this.classList.add("active");
+            });
         });
     });
 </script>
-
 </body>
 </html>
