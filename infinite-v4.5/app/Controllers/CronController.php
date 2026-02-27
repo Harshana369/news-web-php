@@ -14,10 +14,9 @@ class CronController extends BaseController
      */
     public function updateSitemap()
     {
-        $postModel = new PostAdminModel();
-        $postsCount = $postModel->getPostsCount(null);
-        $numSitemaps = $postsCount > SITEMAP_URL_LIMIT ? ceil($postsCount / SITEMAP_URL_LIMIT) : 1;
         $model = new SitemapModel();
+        $postsCount = $model->getPostsCount();
+        $numSitemaps = $postsCount > SITEMAP_URL_LIMIT ? ceil($postsCount / SITEMAP_URL_LIMIT) : 1;
         for ($i = 0; $i < $numSitemaps; $i++) {
             $model->generateSitemap($i);
         }

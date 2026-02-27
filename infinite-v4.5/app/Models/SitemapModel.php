@@ -17,6 +17,12 @@ class SitemapModel extends BaseModel
         $this->urlsAdded = [];
     }
 
+    //get published posts count
+    public function getPostsCount()
+    {
+        return $this->db->table('posts')->where('visibility', 1)->where('status', 1)->countAllResults();
+    }
+
     //update sitemap settings
     public function updateSitemapSettings()
     {
